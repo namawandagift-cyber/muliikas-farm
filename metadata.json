@@ -1,0 +1,6 @@
+{
+  "name": "DairyPulse",
+  "description": "Simple dairy farm sales, expenses, and profit tracking notebook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

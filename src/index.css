@@ -1,0 +1,100 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "tailwindcss";
+
+:root {
+  --farm-green-primary: #166534;
+  --farm-green-dark: #14532d;
+  --farm-green-light: #f0fdf4;
+  --farm-green-border: #bbf7d0;
+  --farm-white: #ffffff;
+  --farm-charcoal: #18181b;
+  --farm-muted: #64748b;
+  --farm-border: #e2e8f0;
+  --farm-border-light: #f1f5f9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: var(--farm-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base element resets */
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* Clean, crisp card styling */
+.clean-card {
+  background-color: #ffffff;
+  border: 1px solid var(--farm-border);
+  border-radius: 12px;
+}
+
+/* Mobile bottom nav */
+.mobile-nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.35rem 0.25rem;
+  color: #64748b;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: color 0.15s ease;
+  min-height: 48px;
+}
+
+.mobile-nav-btn.active {
+  color: #166534;
+  font-weight: 700;
+}
+
+.mobile-nav-btn i {
+  font-size: 1.15rem;
+  margin-bottom: 2px;
+}
+
+/* Primary and secondary button styles */
+.btn-farm-primary {
+  background-color: #166534;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.65rem 1.15rem;
+  transition: background-color 0.15s ease;
+}
+
+.btn-farm-primary:hover, .btn-farm-primary:focus {
+  background-color: #14532d;
+  color: #ffffff;
+}
+
+.btn-farm-secondary {
+  background-color: #ffffff;
+  color: #166534;
+  border: 1px solid #166534;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.65rem 1.15rem;
+  transition: all 0.15s ease;
+}
+
+.btn-farm-secondary:hover {
+  background-color: #f0fdf4;
+  color: #14532d;
+}
+
+/* Tabular numeric font */
+.num-font {
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
